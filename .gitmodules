@@ -1,0 +1,6 @@
+[submodule "anki"]
+	path = anki
+	url = https://github.com/m0wer/docker-anki
+[submodule "polar"]
+	path = polar
+	url = https://github.com/m0wer/docker-polar-bookshelf
