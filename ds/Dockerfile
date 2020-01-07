@@ -4,7 +4,6 @@ FROM jupyter/scipy-notebook
 RUN conda install --quiet --yes \
     'geopandas=0.6.*' \
     'folium=0.10.*' \
-    'cudf=0.11.*' \
     'ipyleaflet=0.11.*'
  
  
