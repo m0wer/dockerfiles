@@ -2,10 +2,12 @@ FROM jupyter/scipy-notebook
 
 # Install Python 3 packages
 RUN conda install --quiet --yes \
-    'geopandas=0.6.*' \
-    'folium=0.10.*' \
-    'cudf=0.11.*' \
-    'ipyleaflet=0.11.*'
+    'geopandas' \
+    'folium' \
+    'ipyleaflet'
+
+RUN conda install --quiet --yes \
+    -c rapidsai cudf
  
  
 RUN pip install --upgrade pip && \
