@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook
+FROM jupyter/tensorflow-notebook
 
 # Install Python 3 packages
 RUN conda install --quiet --yes \
