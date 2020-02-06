@@ -11,6 +11,7 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'partridge[full]' \
         'modin[ray]' \
-        'jupyter_contrib_nbextensions'
+        'jupyter_contrib_nbextensions' \
+        'cudf-cuda100'
 
 RUN jupyter contrib nbextension install --sys-prefix
