@@ -10,4 +10,4 @@ RUN conda install --quiet --yes \
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'partridge[full]' \
-        'modin'
+        'modin[ray]'
