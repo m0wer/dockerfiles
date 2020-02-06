@@ -13,4 +13,4 @@ RUN pip install --upgrade pip && \
         'modin[ray]' \
         'jupyter_contrib_nbextensions'
 
-RUN jupyter contrib nbextension install --system
+RUN jupyter contrib nbextension install --sys-prefix
