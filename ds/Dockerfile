@@ -10,7 +10,7 @@ RUN conda install --quiet --yes \
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'partridge[full]' \
-        'modin[dask]' \
+        'modin[all]' \
         'jupyter_contrib_nbextensions' \
         'cudf-cuda100'
 
