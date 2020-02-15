@@ -1,14 +1,11 @@
 FROM jupyter/tensorflow-notebook
 
-# Install Python 3 packages
-RUN conda install --quiet --yes \
-    'geopandas=0.6.*' \
-    'folium=0.10.*' \
-    'ipyleaflet=0.11.*'
- 
- 
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
+        'geopandas' \
+        'folium' \
+        'ipyleaflet' \
+        'plotly' \
         'partridge[full]' \
         'modin[all]' \
         'jupyter_contrib_nbextensions' \
