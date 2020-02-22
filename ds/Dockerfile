@@ -7,6 +7,7 @@ RUN pip install --upgrade pip && \
         'ipyleaflet' \
         'plotly' \
         'partridge[full]' \
+        'autopep8' \
         'modin[all]' \
         'jupyter_contrib_nbextensions' \
         'cudf-cuda100'
