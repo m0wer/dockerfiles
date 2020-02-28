@@ -14,4 +14,4 @@ RUN pip install --upgrade pip && \
         'cudf-cuda100'
 
 RUN jupyter contrib nbextension install --sys-prefix
-RUN jupyter labextension install jupyterlab-dash --sys-prefix
+RUN jupyter labextension install jupyterlab-dash
