@@ -13,6 +13,7 @@ USER $NB_UID
 
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
+        'autopep8' \
         'bokeh' \
         'cudf-cuda100' \
         'folium' \
@@ -20,12 +21,12 @@ RUN pip install --upgrade pip && \
         'ipyleaflet' \
         'ipywidgets' \
         'jupyterlab-dash' \
-        'matplotlib' \
-        'plotly' \
-        'partridge[full]' \
-        'autopep8' \
-        'modin[ray]' \
         'jupyter_contrib_nbextensions' \
+        'matplotlib' \
+        'modin[ray]' \
+        'partridge[full]' \
+        'plotly' \
+        'psutil' \
         'widgetsnbextension'
 
 # Activate ipywidgets extension in the environment that runs the notebook server
