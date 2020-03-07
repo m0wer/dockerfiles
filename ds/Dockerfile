@@ -9,24 +9,11 @@ RUN apt-get update && \
 
 USER $NB_UID
 
-
-
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
-        'autopep8' \
-        'bokeh' \
-        'cudf-cuda100' \
-        'folium' \
-        'geopandas' \
-        'ipyleaflet' \
         'ipywidgets' \
-        'jupyterlab-dash' \
         'jupyter_contrib_nbextensions' \
         'matplotlib' \
-        'modin[ray]' \
-        'partridge[full]' \
-        'plotly' \
-        'psutil' \
         'widgetsnbextension'
 
 # Activate ipywidgets extension in the environment that runs the notebook server
@@ -51,3 +38,17 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
 ENV XDG_CACHE_HOME /home/$NB_USER/.cache/
 RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
     fix-permissions /home/$NB_USER
+
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir \
+        'autopep8' \
+        'bokeh' \
+        'cudf-cuda100' \
+        'folium' \
+        'geopandas' \
+        'ipyleaflet' \
+        'jupyterlab-dash' \
+        'modin[ray]' \
+        'partridge[full]' \
+        'plotly' \
+        'psutil'
