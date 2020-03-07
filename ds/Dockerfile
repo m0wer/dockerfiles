@@ -38,7 +38,7 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
     jupyter labextension install jupyter-matplotlib --no-build && \
     jupyter lab build && \
     jupyter contrib nbextension install --sys-prefix && \
-    jupyter labextension install jupyterlab-dash \
+    jupyter labextension install jupyterlab-dash && \
     npm cache clean --force && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
     rm -rf /home/$NB_USER/.cache/yarn && \
