@@ -2,13 +2,7 @@ FROM jupyter/minimal-notebook
 
 USER root
 
-ARG ARCH=
 ARG CUDA=10.1
-FROM nvidia/cuda${ARCH:+-$ARCH}:${CUDA}-base-ubuntu${UBUNTU_VERSION} as base
-# ARCH and CUDA are specified again because the FROM directive resets ARGs
-# (but their default value is retained if set previously)
-ARG ARCH
-ARG CUDA
 ARG CUDNN=7.6.4.38-1
 ARG CUDNN_MAJOR_VERSION=7
 ARG LIB_DIR_PREFIX=x86_64
@@ -40,11 +34,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         unzip
 
 # Install TensorRT if not building for PowerPC
-RUN [[ "${ARCH}" = "ppc64le" ]] || { apt-get update && \
+RUN apt-get update && \
         apt-get install -y --no-install-recommends libnvinfer${LIBNVINFER_MAJOR_VERSION}=${LIBNVINFER}+cuda${CUDA} \
         libnvinfer-plugin${LIBNVINFER_MAJOR_VERSION}=${LIBNVINFER}+cuda${CUDA} \
         && apt-get clean \
-        && rm -rf /var/lib/apt/lists/*; }
+        && rm -rf /var/lib/apt/lists/*
 
 # For CUDA profiling, TensorFlow requires CUPTI.
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
