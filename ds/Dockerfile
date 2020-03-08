@@ -43,7 +43,7 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'autopep8' \
         'bokeh' \
-        'cudf-cuda100' \
+        'cudf-cuda92' \
         'folium' \
         'geopandas' \
         'ipyleaflet' \
