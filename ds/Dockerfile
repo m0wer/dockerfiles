@@ -51,4 +51,5 @@ RUN pip install --upgrade pip && \
         'partridge[full]' \
         'plotly' \
         'psutil' \
+        'psycopg2-binary' \
         'sqlalchemy'
