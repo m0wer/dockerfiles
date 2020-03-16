@@ -50,4 +50,5 @@ RUN pip install --upgrade pip && \
         'modin[ray]' \
         'partridge[full]' \
         'plotly' \
-        'psutil'
+        'psutil' \
+        'sqlalchemy'
