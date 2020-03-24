@@ -52,4 +52,5 @@ RUN pip install --upgrade pip && \
         'plotly' \
         'psutil' \
         'psycopg2-binary' \
+        'sklearn' \
         'sqlalchemy'
