@@ -43,11 +43,13 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'autopep8' \
         'bokeh' \
+        'dask' \
         'folium' \
         'geopandas' \
         'ipyleaflet' \
         'jupyterlab-dash' \
         'modin[ray]' \
+        'pandarallel' \
         'partridge[full]' \
         'plotly' \
         'psutil' \
