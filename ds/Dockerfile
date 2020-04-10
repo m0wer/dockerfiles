@@ -57,4 +57,5 @@ RUN pip install --upgrade pip && \
         'psutil' \
         'psycopg2-binary' \
         'sklearn' \
-        'sqlalchemy'
+        'sqlalchemy' \
+        'xgboost'
