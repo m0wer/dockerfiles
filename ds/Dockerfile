@@ -50,12 +50,14 @@ RUN pip install --upgrade pip && \
         'graphviz' \
         'ipyleaflet' \
         'jupyterlab-dash' \
+        'mlinsights' \
         'modin[ray]' \
         'pandarallel' \
         'partridge[full]' \
         'plotly' \
         'psutil' \
         'psycopg2-binary' \
+        'pyquickhelper' \
         'sklearn' \
         'sqlalchemy' \
         'xgboost'
