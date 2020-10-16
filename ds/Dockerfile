@@ -44,6 +44,7 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'autopep8' \
         'bokeh' \
+        'git+git://github.com/cgupm/crtm_poll' \
         'dask' \
         'folium' \
         'geopandas' \
