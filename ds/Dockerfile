@@ -42,6 +42,9 @@ RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
 
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
+        'scikit-learn'
+
+RUN pip install --no-cache-dir \
         'autopep8' \
         'bokeh' \
         'git+git://github.com/cgupm/crtm_poll' \
@@ -59,6 +62,5 @@ RUN pip install --upgrade pip && \
         'psutil' \
         'psycopg2-binary' \
         'pyquickhelper' \
-        'scikit-learn' \
         'sqlalchemy' \
         'xgboost'
