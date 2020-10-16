@@ -51,7 +51,6 @@ RUN pip install --upgrade pip && \
         'graphviz' \
         'ipyleaflet' \
         'jupyterlab-dash' \
-        'sklearn' \
         'mlinsights' \
         'modin[ray]' \
         'pandarallel' \
@@ -60,5 +59,6 @@ RUN pip install --upgrade pip && \
         'psutil' \
         'psycopg2-binary' \
         'pyquickhelper' \
+        'scikit-learn' \
         'sqlalchemy' \
         'xgboost'
