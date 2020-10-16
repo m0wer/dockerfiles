@@ -14,7 +14,11 @@ build_and_push(){
 	build_dir=$3
 
 	echo "Building ${REPO_URL}/${base}:${suite} for context ${build_dir}"
-	docker build --rm --force-rm -t "${REPO_URL}/${base}:${suite}" "${build_dir}" || return 1
+    if [["$NO_CACHE" == "TRUE"]]; then
+	    docker build --rm --no-cache --force-rm -t "${REPO_URL}/${base}:${suite}" "${build_dir}" || return 1
+    else
+	    docker build --rm --force-rm -t "${REPO_URL}/${base}:${suite}" "${build_dir}" || return 1
+    fi
 
 	# on successful build, push the image
 	echo "                       ---                                   "
