@@ -63,4 +63,5 @@ RUN pip install --no-cache-dir \
         'psycopg2-binary' \
         'pyquickhelper' \
         'sqlalchemy' \
+        'sympy' \
         'xgboost'
