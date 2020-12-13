@@ -54,6 +54,7 @@ RUN pip install --no-cache-dir \
         'graphviz' \
         'ipyleaflet' \
         'jupyterlab-dash' \
+        'kaleido' \
         'mlinsights' \
         'modin[ray]' \
         'pandarallel' \
