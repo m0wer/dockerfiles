@@ -50,6 +50,7 @@ RUN pip install --no-cache-dir \
         'git+git://github.com/cgupm/crtm_poll' \
         'dask' \
         'folium' \
+        'gdown' \
         'geopandas' \
         'graphviz' \
         'ipyleaflet' \
@@ -57,6 +58,7 @@ RUN pip install --no-cache-dir \
         'kaleido' \
         'mlinsights' \
         'modin[ray]' \
+        'mrjob' \
         'pandarallel' \
         'partridge[full]' \
         'plotly' \
