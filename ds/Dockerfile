@@ -5,7 +5,8 @@ USER root
 # ffmpeg for matplotlib anim
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ffmpeg \
-                                               graphviz && \
+                                               graphviz \
+                                               openjdk-8-jdk && \
     rm -rf /var/lib/apt/lists/*
 
 USER $NB_UID
@@ -65,6 +66,7 @@ RUN pip install --no-cache-dir \
         'psutil' \
         'psycopg2-binary' \
         'pyquickhelper' \
+        'pyspark' \
         'sqlalchemy' \
         'statsmodels' \
         'sympy' \
