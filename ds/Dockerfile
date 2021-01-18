@@ -26,7 +26,7 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
     jupyter labextension install @jupyter-widgets/jupyterlab-manager@^2.0.0 --no-build && \
     jupyter labextension install @bokeh/jupyter_bokeh@^2.0.0 --no-build && \
     jupyter labextension install jupyter-matplotlib --no-build && \
-    jupyter lab build && \
+    jupyter lab build --dev-build=False && \
     jupyter contrib nbextension install --sys-prefix && \
     #jupyter labextension install jupyterlab-dash && \
     npm cache clean --force && \
