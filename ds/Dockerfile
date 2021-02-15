@@ -53,6 +53,7 @@ RUN pip install --no-cache-dir \
         'folium' \
         'gdown' \
         'geopandas' \
+        'geopy' \
         'graphviz' \
         'ipyleaflet' \
         'jupyterlab-dash' \
