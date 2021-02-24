@@ -24,7 +24,7 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
     # Check this URL for most recent compatibilities
     # https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager
     jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build && \
-    jupyter labextension install @bokeh/jupyter_bokeh --no-build && \
+    #jupyter labextension install @bokeh/jupyter_bokeh --no-build && \
     # jupyter labextension install jupyter-matplotlib --no-build && \
     jupyter lab build --dev-build=False && \
     jupyter contrib nbextension install --sys-prefix && \
