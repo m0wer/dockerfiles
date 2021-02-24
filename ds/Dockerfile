@@ -23,7 +23,7 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
     # Also activate ipywidgets extension for JupyterLab
     # Check this URL for most recent compatibilities
     # https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager
-    jupyter labextension install @jupyter-widgets/jupyterlab-manager@2 --no-build && \
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build && \
     jupyter labextension install @bokeh/jupyter_bokeh@2.0.4 --no-build && \
     # jupyter labextension install jupyter-matplotlib --no-build && \
     jupyter lab build --dev-build=False && \
