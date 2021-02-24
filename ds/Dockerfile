@@ -56,6 +56,7 @@ RUN pip install --no-cache-dir \
         'geopy' \
         'graphviz' \
         'ipyleaflet' \
+        'isort' \
         'jupyterlab-dash' \
         'kaleido' \
         'mlinsights' \
