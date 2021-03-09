@@ -69,6 +69,7 @@ RUN pip install --no-cache-dir \
         'psycopg2-binary' \
         'pyquickhelper' \
         'pyspark' \
+        'SimpSOM' \
         'sqlalchemy' \
         'statsmodels' \
         'sympy' \
