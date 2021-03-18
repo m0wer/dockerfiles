@@ -86,6 +86,7 @@ RUN pip install --no-cache-dir \
         'geopandas' \
         'geopy' \
         'graphviz' \
+        'git+https://github.com/CxAalto/gtfspy' \
         'ipyleaflet' \
         'isort' \
         'jupyterlab-dash' \
