@@ -92,7 +92,6 @@ RUN pip install --no-cache-dir \
         'jupyterlab-dash' \
         'kaleido' \
         'mlinsights' \
-        'modin[ray]' \
         'mrjob' \
         'pandarallel' \
         'partridge[full]' \
