@@ -101,6 +101,7 @@ RUN pip install --no-cache-dir \
         'pyquickhelper' \
         'pyspark' \
         'pyvis' \
+        'scikit-fuzzy' \
         'seaborn' \
         'SimpSOM' \
         'sqlalchemy' \
