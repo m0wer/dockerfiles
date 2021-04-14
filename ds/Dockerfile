@@ -91,6 +91,7 @@ RUN pip install --no-cache-dir \
         'git+https://github.com/CxAalto/gtfspy' \
         'ipyleaflet' \
         'isort' \
+        'jupyter-dash' \
         'jupyterlab-dash' \
         'kaleido' \
         'mlinsights' \
