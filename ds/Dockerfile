@@ -110,4 +110,5 @@ RUN pip install --no-cache-dir \
         'sqlalchemy' \
         'statsmodels' \
         'sympy' \
+        'yapf' \
         'xgboost'
