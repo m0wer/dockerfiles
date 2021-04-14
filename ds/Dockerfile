@@ -25,10 +25,10 @@ RUN conda install --quiet --yes \
     'r-caret=6.0*' \
     'r-crayon=1.4*' \
     'r-devtools=2.3*' \
-    'r-forecast=8.13*' \ 
+    'r-forecast=8.13*' \
     'r-hexbin=1.28*' \
     'r-htmltools=0.5*' \
-    'r-htmlwidgets=1.5*' \ 
+    'r-htmlwidgets=1.5*' \
     'r-irkernel=1.1*' \
     'r-nycflights13=1.0*' \
     'r-randomforest=4.6*' \
@@ -45,6 +45,7 @@ RUN conda install --quiet --yes \
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'ipywidgets' \
+        'jupyter-server-proxy' \
         'jupyter_contrib_nbextensions' \
         'matplotlib' \
         'widgetsnbextension'
@@ -60,6 +61,7 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
     jupyter lab build --dev-build=False && \
     jupyter contrib nbextension install --sys-prefix && \
     #jupyter labextension install jupyterlab-dash && \
+    jupyter serverextension enable --sys-prefix jupyter_server_proxy && \
     npm cache clean --force && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
     rm -rf /home/$NB_USER/.cache/yarn && \
