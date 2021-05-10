@@ -81,6 +81,7 @@ RUN pip install --upgrade pip && \
 RUN pip install --no-cache-dir \
         'autopep8' \
         'bokeh' \
+        'bs4' \
         'git+git://github.com/cgupm/crtm_poll' \
         'dask' \
         'folium' \
