@@ -91,6 +91,7 @@ RUN pip install --no-cache-dir \
         'graphviz' \
         'git+https://github.com/CxAalto/gtfspy' \
         'ipyleaflet' \
+        'ipynb' \
         'isort' \
         'jupyter-dash' \
         'jupyterlab-dash' \
