@@ -98,7 +98,7 @@ RUN pip install --no-cache-dir \
         'kaleido' \
         'mlinsights' \
         'mrjob' \
-        'nlkt' \
+        'nltk' \
         'pandarallel' \
         'partridge[full]' \
         'plotly' \
