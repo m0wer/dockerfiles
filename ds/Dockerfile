@@ -83,6 +83,7 @@ RUN pip install --no-cache-dir \
         'bokeh' \
         'bs4' \
         'git+git://github.com/cgupm/crtm_poll' \
+        'dataframe-image' \
         'dask' \
         'folium' \
         'gdown' \
