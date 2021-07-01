@@ -19,6 +19,23 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v2
+      - name: Setup Python 3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Update test dependencies
+        run: |
+          pip install pip-tools
+          rm requirements.txt
+          touch requirements.txt
+          pip-compile -Ur requirements.in --allow-unsafe
       -
         name: Docker meta
         id: meta

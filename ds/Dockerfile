@@ -7,7 +7,8 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     fonts-dejavu \
     gfortran \
-    gcc && \
+    gcc \
+    g++ && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # ffmpeg for matplotlib anim
@@ -78,42 +79,4 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'scikit-learn'
 
-RUN pip install --no-cache-dir \
-        'autopep8' \
-        'bokeh' \
-        'bs4' \
-        'git+git://github.com/cgupm/crtm_poll' \
-        'dataframe-image' \
-        'dask' \
-        'folium' \
-        'gdown' \
-        'geopandas' \
-        'geopy' \
-        'graphviz' \
-        'git+https://github.com/CxAalto/gtfspy' \
-        'ipyleaflet' \
-        'ipynb' \
-        'isort' \
-        'jupyter-dash' \
-        'jupyterlab-dash' \
-        'kaleido' \
-        'mlinsights' \
-        'mrjob' \
-        'nltk' \
-        'pandarallel' \
-        'partridge[full]' \
-        'plotly' \
-        'psutil' \
-        'psycopg2-binary' \
-        'pyquickhelper' \
-        'pyspark' \
-        'pyunpack' \
-        'pyvis' \
-        'scikit-fuzzy' \
-        'seaborn' \
-        'SimpSOM' \
-        'sqlalchemy' \
-        'statsmodels' \
-        'sympy' \
-        'yapf' \
-        'xgboost'
+RUN pip install --no-cache-dir -r requirements.txt
