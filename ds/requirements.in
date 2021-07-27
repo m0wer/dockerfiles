@@ -1,4 +1,3 @@
-
 autopep8
 #bokeh
 bs4
@@ -22,6 +21,7 @@ jupyterlab-dash
 pandarallel
 #partridge[full]
 plotly
+pmdarima
 #psutil
 psycopg2-binary
 #pyquickhelper
