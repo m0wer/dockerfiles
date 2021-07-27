@@ -23,7 +23,7 @@ pandarallel
 #partridge[full]
 plotly
 #psutil
-#psycopg2-binary
+psycopg2-binary
 #pyquickhelper
 #pyspark
 #pyunpack
@@ -36,5 +36,5 @@ sqlalchemy
 statsmodels
 #sympy
 tensorflow
-#yapf
+yapf
 xgboost
