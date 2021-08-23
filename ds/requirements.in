@@ -6,7 +6,7 @@ bs4
 #folium
 #gdown
 #geopandas
-#geopy
+geopy
 #graphviz
 #git+https://github.com/CxAalto/gtfspy
 #ipyleaflet
@@ -27,7 +27,7 @@ psycopg2-binary
 #pyquickhelper
 #pyspark
 #pyunpack
-#pyvis
+pyvis
 #scikit-fuzzy
 #seaborn
 #SimpSOM

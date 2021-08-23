@@ -46,7 +46,7 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
     # jupyter labextension install jupyter-matplotlib --no-build && \
     jupyter lab build --dev-build=False && \
     jupyter contrib nbextension install --sys-prefix && \
-    #jupyter labextension install jupyterlab-dash && \
+    jupyter labextension install jupyterlab-dash && \
     jupyter serverextension enable --sys-prefix jupyter_server_proxy && \
     npm cache clean --force && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
