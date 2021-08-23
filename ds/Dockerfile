@@ -31,6 +31,7 @@ RUN conda install --quiet --yes \
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         'ipywidgets' \
+        'jupyter-dash' \
         'jupyter-server-proxy' \
         'jupyter_contrib_nbextensions' \
         'matplotlib' \
