@@ -43,10 +43,10 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
     # https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager
     jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build && \
     #jupyter labextension install @bokeh/jupyter_bokeh --no-build && \
+    jupyter labextension install jupyterlab-dash && \
     # jupyter labextension install jupyter-matplotlib --no-build && \
     jupyter lab build --dev-build=False && \
     jupyter contrib nbextension install --sys-prefix && \
-    jupyter labextension install jupyterlab-dash && \
     jupyter serverextension enable --sys-prefix jupyter_server_proxy && \
     npm cache clean --force && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
