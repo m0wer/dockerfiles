@@ -14,7 +14,7 @@ ansi2html==1.6.0
     # via jupyter-dash
 anyio==3.3.0
     # via jupyter-server
-argon2-cffi==20.1.0
+argon2-cffi==21.1.0
     # via jupyter-server
 astunparse==1.6.3
     # via tensorflow
@@ -30,7 +30,7 @@ backcall==0.2.0
     # via ipython
 beautifulsoup4==4.9.3
     # via bs4
-bleach==4.0.0
+bleach==4.1.0
     # via nbconvert
 brotli==1.0.9
     # via flask-compress
@@ -52,15 +52,15 @@ click==8.0.1
     # via flask
 cython==0.29.24
     # via pmdarima
-dash==1.21.0
+dash==2.0.0
     # via
     #   jupyter-dash
     #   jupyterlab-dash
-dash-core-components==1.17.1
+dash-core-components==2.0.0
     # via dash
-dash-html-components==1.1.4
+dash-html-components==2.0.0
     # via dash
-dash-table==4.12.0
+dash-table==5.0.0
     # via dash
 debugpy==1.4.1
     # via ipykernel
@@ -83,8 +83,6 @@ flask-compress==1.10.1
     # via dash
 flatbuffers==1.12
     # via tensorflow
-future==0.18.2
-    # via dash
 gast==0.4.0
     # via tensorflow
 geographiclib==1.52
@@ -95,7 +93,7 @@ google-auth==1.35.0
     # via
     #   google-auth-oauthlib
     #   tensorboard
-google-auth-oauthlib==0.4.5
+google-auth-oauthlib==0.4.6
     # via tensorboard
 google-pasta==0.2.0
     # via tensorflow
@@ -112,20 +110,20 @@ idna==3.2
     #   anyio
     #   requests
     #   yarl
-ipykernel==6.2.0
+ipykernel==6.3.1
     # via jupyter-dash
 ipynb==0.5.1
     # via -r requirements.in
-ipython==7.26.0
+ipython==7.27.0
     # via
     #   ipykernel
     #   jupyter-dash
     #   pyvis
 ipython-genutils==0.2.0
     # via
+    #   ipykernel
     #   jupyter-server
     #   nbformat
-    #   traitlets
 isort==5.9.3
     # via -r requirements.in
 itsdangerous==2.0.1
@@ -146,7 +144,7 @@ jsonpickle==2.0.0
     # via pyvis
 jsonschema==3.2.0
     # via nbformat
-jupyter-client==7.0.1
+jupyter-client==7.0.2
     # via
     #   ipykernel
     #   jupyter-server
@@ -236,7 +234,7 @@ pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
-plotly==5.2.1
+plotly==5.3.1
     # via
     #   -r requirements.in
     #   dash
@@ -318,7 +316,6 @@ simpervisor==0.4
 six==1.15.0
     # via
     #   absl-py
-    #   argon2-cffi
     #   astunparse
     #   bleach
     #   google-auth
@@ -370,7 +367,7 @@ tornado==6.1
     #   jupyter-client
     #   jupyter-server
     #   terminado
-traitlets==5.0.5
+traitlets==5.1.0
     # via
     #   ipykernel
     #   ipython
@@ -415,7 +412,7 @@ yarl==1.6.3
     # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==57.4.0
+setuptools==57.5.0
     # via
     #   google-auth
     #   ipython
