@@ -9,6 +9,7 @@ bs4
 geopy
 #graphviz
 #git+https://github.com/CxAalto/gtfspy
+influxdb
 #ipyleaflet
 ipynb
 isort
