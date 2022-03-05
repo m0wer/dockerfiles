@@ -36,8 +36,6 @@ backcall==0.2.0
     # via ipython
 beautifulsoup4==4.10.0
     # via bs4
-black==22.1.0
-    # via ipython
 bleach==4.1.0
     # via nbconvert
 brotli==1.0.9
@@ -50,17 +48,15 @@ certifi==2021.10.8
     # via requests
 cffi==1.15.0
     # via argon2-cffi-bindings
-charset-normalizer==2.0.11
+charset-normalizer==2.0.12
     # via
     #   aiohttp
     #   requests
-click==8.0.3
-    # via
-    #   black
-    #   flask
-cython==0.29.27
+click==8.0.4
+    # via flask
+cython==0.29.28
     # via pmdarima
-dash==2.1.0
+dash==2.2.0
     # via
     #   jupyter-dash
     #   jupyterlab-dash
@@ -82,14 +78,14 @@ entrypoints==0.4
     # via
     #   jupyter-client
     #   nbconvert
-executing==0.8.2
+executing==0.8.3
     # via stack-data
-flask==2.0.2
+flask==2.0.3
     # via
     #   dash
     #   flask-compress
     #   jupyter-dash
-flask-compress==1.10.1
+flask-compress==1.11
     # via dash
 flatbuffers==2.0
     # via tensorflow
@@ -113,7 +109,7 @@ google-pasta==0.2.0
     # via tensorflow
 greenlet==1.1.2
     # via sqlalchemy
-grpcio==1.43.0
+grpcio==1.44.0
     # via
     #   tensorboard
     #   tensorflow
@@ -124,15 +120,15 @@ idna==3.3
     #   anyio
     #   requests
     #   yarl
-importlib-metadata==4.10.1
+importlib-metadata==4.11.2
     # via markdown
 influxdb==5.3.1
     # via -r requirements.in
-ipykernel==6.8.0
+ipykernel==6.9.1
     # via jupyter-dash
 ipynb==0.5.1
     # via -r requirements.in
-ipython==8.0.1
+ipython==8.1.1
     # via
     #   ipykernel
     #   jupyter-dash
@@ -143,7 +139,7 @@ ipython-genutils==0.2.0
     #   nbformat
 isort==5.10.1
     # via -r requirements.in
-itsdangerous==2.0.1
+itsdangerous==2.1.0
     # via flask
 jedi==0.18.1
     # via ipython
@@ -166,15 +162,15 @@ jupyter-client==7.1.2
     #   ipykernel
     #   jupyter-server
     #   nbclient
-jupyter-core==4.9.1
+jupyter-core==4.9.2
     # via
     #   jupyter-client
     #   jupyter-server
     #   nbconvert
     #   nbformat
-jupyter-dash==0.4.0
+jupyter-dash==0.4.1
     # via -r requirements.in
-jupyter-server==1.13.4
+jupyter-server==1.13.5
     # via jupyter-server-proxy
 jupyter-server-proxy==3.2.1
     # via jupyterlab-dash
@@ -190,7 +186,7 @@ libclang==13.0.0
     # via tensorflow
 markdown==3.3.6
     # via tensorboard
-markupsafe==2.0.1
+markupsafe==2.1.0
     # via jinja2
 matplotlib-inline==0.1.3
     # via
@@ -204,11 +200,9 @@ multidict==6.0.2
     # via
     #   aiohttp
     #   yarl
-mypy-extensions==0.4.3
-    # via black
-nbclient==0.5.10
+nbclient==0.5.11
     # via nbconvert
-nbconvert==6.4.1
+nbconvert==6.4.2
     # via jupyter-server
 nbformat==5.1.3
     # via
@@ -220,7 +214,7 @@ nest-asyncio==1.5.4
     #   ipykernel
     #   jupyter-client
     #   nbclient
-networkx==2.6.3
+networkx==2.7
     # via pyvis
 numpy==1.22.2
     # via
@@ -244,35 +238,33 @@ packaging==21.3
     # via
     #   bleach
     #   jupyter-server
-pandarallel==1.5.4
+    #   statsmodels
+pandarallel==1.5.7
     # via -r requirements.in
-pandas==1.4.0
+pandas==1.4.1
     # via
+    #   pandarallel
     #   pmdarima
     #   statsmodels
 pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
     # via jedi
-pathspec==0.9.0
-    # via black
 patsy==0.5.2
     # via statsmodels
 pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
-platformdirs==2.4.1
-    # via black
-plotly==5.5.0
+plotly==5.6.0
     # via
     #   -r requirements.in
     #   dash
-pmdarima==1.8.4
+pmdarima==1.8.5
     # via -r requirements.in
 prometheus-client==0.13.1
     # via jupyter-server
-prompt-toolkit==3.0.26
+prompt-toolkit==3.0.28
     # via ipython
 protobuf==3.19.4
     # via
@@ -336,7 +328,7 @@ scikit-learn==1.0.2
     # via
     #   -r requirements.in
     #   pmdarima
-scipy==1.7.3
+scipy==1.8.0
     # via
     #   pmdarima
     #   scikit-learn
@@ -368,9 +360,9 @@ soupsieve==2.3.1
     # via beautifulsoup4
 sqlalchemy==1.4.31
     # via -r requirements.in
-stack-data==0.1.4
+stack-data==0.2.0
     # via ipython
-statsmodels==0.13.1
+statsmodels==0.13.2
     # via
     #   -r requirements.in
     #   pmdarima
@@ -388,9 +380,9 @@ tensorflow-io-gcs-filesystem==0.24.0
     # via tensorflow
 termcolor==1.1.0
     # via tensorflow
-terminado==0.13.1
+terminado==0.13.2
     # via jupyter-server
-testpath==0.5.0
+testpath==0.6.0
     # via nbconvert
 tf-estimator-nightly==2.8.0.dev2021122109
     # via tensorflow
@@ -398,8 +390,6 @@ threadpoolctl==3.1.0
     # via scikit-learn
 toml==0.10.2
     # via autopep8
-tomli==2.0.0
-    # via black
 tornado==6.1
     # via
     #   ipykernel
@@ -417,10 +407,8 @@ traitlets==5.1.1
     #   nbclient
     #   nbconvert
     #   nbformat
-typing-extensions==4.0.1
-    # via
-    #   black
-    #   tensorflow
+typing-extensions==4.1.1
+    # via tensorflow
 urllib3==1.26.8
     # via
     #   pmdarima
@@ -429,9 +417,9 @@ wcwidth==0.2.5
     # via prompt-toolkit
 webencodings==0.5.1
     # via bleach
-websocket-client==1.2.3
+websocket-client==1.3.1
     # via jupyter-server
-werkzeug==2.0.2
+werkzeug==2.0.3
     # via
     #   flask
     #   tensorboard
@@ -451,7 +439,7 @@ zipp==3.7.0
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==60.7.1
+setuptools==60.9.3
     # via
     #   ipython
     #   pmdarima
